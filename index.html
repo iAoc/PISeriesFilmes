@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!--
+    O atributo charset neste elemento <meta> informa ao navegador como deve interpretar os caracteres no documento. A menos que você tenha um caso de uso muito especial, você deve usar o UTF-8 aqui.
+    -->
+	<meta charset="utf-8">
+	<title>Página Inicial</title>
+
+    <!-- 
+    Cascading Style Sheets, ou CSS, é um idioma usado para descrever como o navegador da Web deve apresentar elementos HTML e seu conteúdo. Você pode usar o CSS para controlar os aspectos visuais da sua página da web, incluindo a posição do elemento, cores de fundo e imagens, bordas, fontes e muitos mais aspectos de design.
+    -->
+	<link rel="stylesheet" href="css/style.css">
+    
+    <!--
+    O elemento <meta> é usado para definir metadados, como uma descrição sobre a página, palavras-chave ou o autor da página.
+    -->
+	<meta name="description" content="Filmes/Séries">
+	
+</head>
+<body>
+	<!-- Page Container -->
+	<div id="container">
+		<!-- Header 
+        <-- 
+        Quase todas as páginas da Web têm uma seção de cabeçalho de alguma descrição. Esta seção geralmente contém informações como um logotipo da empresa, slogan e links de navegação do site. O HTML5 apresenta um novo elemento <header> que você pode usar para definir esta seção do layout da sua página. Você pode usar o elemento <header> mais de uma vez em uma página, como você verá logo quando você aprender sobre o elemento <article>.
+        -->
+		<header>
+			<!-- Logo -->
+			<div id="logo">
+				<h1>Filmes/Séries</h1>
+			</div>
+			<!-- Navigation -->
+            <!-- 
+            Todos os sites precisam de links de navegação para permitir que os usuários se movam facilmente entre diferentes páginas.
+            O HTML5 apresenta o novo elemento <nav> que permite que você indique aos programas de computador exatamente onde esses links de navegação podem ser encontrados na página. Isso pode ser útil para usuários que dependem do software de leitura de tela, por exemplo, porque o software pode identificar com maior precisão a navegação na página. Essa capacidade se traduz no fato de o usuário poder navegar mais rápido no seu site.
+            -->
+			<nav>
+				<ul>
+					<li>
+                        <!-- 
+                        Os hiperlinks em HTML são criados usando o elemento <a>. Além de vincular a outras páginas na web, você também pode usar o elemento <a> para vincular a partes da página atual.
+                        -->
+						<a href="index.html" title="Página Inicial" class="active">
+							Página Inicial
+						</a>
+					</li>
+					<li>
+						<a href="sobre.html" title="Séries">
+							Séries
+						</a>
+					</li>
+					
+					
+					<li>
+						<a href="localizacao.html" title="Filmes">
+							Filmes
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main Content -->
+		<div>
+			<!-- Feature -->
+            <!-- 
+            O elemento <section> deve ser usado para representar uma seção genérica de sua página da web. Por exemplo, você pode usá-lo para representar capítulos individuais em um documento ou nas diferentes seções de uma página inicial (como introdução, notícias ou informações de contato). Os elementos da seção normalmente contêm um título como seu primeiro conteúdo.
+            -->
+            <!-- 
+            O layout da página inicial é um pouco mais complexo porque possui três seções de conteúdo separadas:
+            um para um banner principal, um para algumas informações sobre a empresa e um para ofertas especiais. Você usará um elemento <section> para cada um desses.
+            -->
+			<section id="feature">
+				<hgroup>
+					<h1>Filmes/Séries</h1>
+					<h2>Filmes/Séries Grátis!</h2>
+				</hgroup>
+			</section>
+
+			<!-- Home Text -->
+			<section id="home-text">
+				<h1>Bem-vindo ao site Filmes/Séries Gratuito</h1>
+				<p>
+                    Aqui temos grandes filmes, veja nossos <a href=localizacao.html> Filmes</a> e <a href="sobre.html">Séries</a>.
+				</p>
+				
+			</section>
+
+			<!-- Special Offers -->
+			
+		</div>
+
+		<!-- Footer -->
+        <!--
+        Outro elemento novo no HTML5 é o elemento <footer>. Este elemento normalmente contém conteúdo como os avisos de direitos autorais e links que são encontrados na parte inferior das páginas da web. Como os elementos <header> e <nav>, você pode ter mais de um elemento <footer> em uma página.
+        -->
+		<footer>
+			<small>&copy; 2012 Filmes/Séries Cop. All Rights Reserved</small> - <a href="sitemap.html" title="Links para todas as páginas deste site">Sitemap</a>
+		</footer>
+	</div>
+</body>
+</html>
